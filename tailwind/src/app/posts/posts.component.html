@@ -16,29 +16,43 @@
         <div class="user">
           <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="user__image">
           <div class="user__info">
-            <h5>Jane Doe</h5>
-            <small>2h ago</small>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
-    <div class="card">
-      <div class="card__header">
-        <img src="https://source.unsplash.com/600x400/?food" alt="card__image" class="card__image" width="600">
-      </div>
-      <div class="card__body">
-        <span class="tag tag-brown">Food</span>
-        <h4>{{post.title}}</h4>
-        <p>{{post.body}}</p>
-      </div>
-      <div class="card__footer">
-        <div class="user">
-          <img src="https://i.pravatar.cc/40?img=2" alt="user__image" class="user__image">
-          <div class="user__info">
             <h5>Jony Doe</h5>
             <small>Yesterday</small>
           </div>
+            <div><button class="bg-blue-500 hover:bg-blue-700 text-white font py-2 px-4 rounded">editar</button></div>
+         <br>
+         <br>
+        </div>
+        <div><button class="bg-red-500 hover:bg-red-700 text-white font py-2 px-4 rounded">borrar</button></div> 
+          <br>
+          <br>
+        </div>
+      </div>
+  <br>
+  <br>
+      <br>  
+      <div *ngFor="let post of posts">
+      <div class="card">
+        <div class="card__header">
+          <img src="https://source.unsplash.com/600x400/?food" alt="card__image" class="card__image" width="600">
+        </div>
+        <div class="card__body">
+          <span class="tag tag-brown">Food</span>
+          <h4>{{post.title}}</h4>
+          <p>{{post.body}}</p>
+        </div>
+        <div class="card__footer">
+          <div class="user">
+            <img src="https://i.pravatar.cc/40?img=2" alt="user__image" class="user__image">
+            <div class="user__info">
+              <h5>Jony Doe</h5>
+              <small>Yesterday</small>
+            </div>
+            <div><button class="bg-blue-500 hover:bg-blue-700 text-white font py-2 px-4 rounded">editar</button></div>
+            <br>
+            <br>
+          </div>
+          <div><button class="bg-red-500 hover:bg-red-700 text-white font py-2 px-4 rounded">borrar</button></div>
         </div>
       </div>
     </div>
@@ -48,11 +62,11 @@
         <img src="https://source.unsplash.com/600x400/?car,automobile" alt="card__image" class="card__image"
           width="600">
       </div>
+    
       <div class="card__body">
         <span class="tag tag-red">Automobile</span>
-        <h4>Race to your heart content</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi perferendis molestiae non nemo doloribus.
-          Doloremque, nihil! At ea atque quidem!</p>
+        <h4>{{post.title}}</h4>
+        <p>{{post.body}}</p>
       </div>
       <div class="card__footer">
         <div class="user">
@@ -63,5 +77,4 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
+    </div></div>
