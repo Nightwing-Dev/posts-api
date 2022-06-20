@@ -1,0 +1,28 @@
+
+.title{
+    color: rgb(255, 255, 255);
+    font-size:large;
+    font-weight: bold;
+}
+
+.title2{
+    color: rgb(254, 252, 252);
+    font-size: small;
+}
+.bar {
+    height: 20px;
+    background-color: rgb(50, 0, 168);
+  }
+ 
+ 
+
+  element {
+    line-height: 21px;
+    letter-spacing: 0.048em;
+    font-size: 100%;
+    line-height: 32px;
+    letter-spacing: -0.13em;
+    align-items: center; 
+  }
+
+  
